@@ -16,6 +16,10 @@ class StatsTest(unittest.TestCase):
     # nan (not-a-number), as defined in the math package
     # Specify the assert here.
     # Use nan and isnan in https://docs.python.org/3/library/math.html
+    import math
+    self.assertTrue(math.isnan(computedStats["avg"]))
+    self.assertTrue(math.isnan(computedStats["min"]))
+    self.assertTrue(math.isnan(computedStats["max"]))
 
 
 if __name__ == "__main__":
